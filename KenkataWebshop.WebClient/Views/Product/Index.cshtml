@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model List<ProductViewModel>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -222,13 +224,14 @@
        </div>
     </div>
 
-
+    @foreach(var product in @Model)
+    {
  <div class="Right "style="padding-left:50px;"> 
     <div class="row md-3" style="grid-row-gap: 30px; grid-column-gap: 34px;">
           <div class="card" style="width: 255px; height: 292px;">
             <img src="productview/Product-dress.svg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Circle pattern girls shirt</h5>
+              <h5 class="card-title">@product.Name</h5>
             </div>
           </div>
         
@@ -325,7 +328,7 @@
  
  
  </div>
-
+ }
 
 </div>
   
