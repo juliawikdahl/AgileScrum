@@ -14,14 +14,10 @@ namespace Solution1.WebApi.Controllers
             {
                 new ProductDto
                 {
-                    Name = "Träolja",
+                    Name = "Circle Pattern Girls Skirt",
                  
                 },
-                new ProductDto
-                {
-                    Name = "Boll",
-                   
-                }
+         
             };
 
             return Ok(products);
